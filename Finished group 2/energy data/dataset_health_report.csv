@@ -1,0 +1,9 @@
+check,result
+Number of rows,2179
+Number of columns,10
+Unique countries,220
+Earliest year,2015
+Latest year,2024
+Missing country values,0
+Missing year values,0
+Duplicate country-year pairs,0

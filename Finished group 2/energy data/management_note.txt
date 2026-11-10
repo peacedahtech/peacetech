@@ -1,0 +1,46 @@
+MANAGEMENT NOTE: OUR WORLD IN DATA ENERGY ANALYSIS
+
+Objective
+This analysis examines country-level energy indicators over the
+2015–2024 period to support structured comparison of energy
+consumption and electricity demand.
+
+Dataset and methodology
+The analysis used the supplied Our World in Data energy CSV and
+its indicator codebook. The working dataset contains 2179
+records representing 220 distinct country labels.
+The observed year range is 2015–2024. Records without
+an ISO code were excluded during the initial country-selection
+step. Country-year records were sorted and checked for duplicates.
+
+Data preparation
+Missing values were quantified rather than automatically replaced
+with zero, because unavailable measurements do not necessarily
+represent zero consumption. Two features were calculated where
+valid inputs were available: renewable consumption divided by
+combined renewable and fossil-fuel consumption, and electricity
+demand per person. These derived indicators have different
+denominators and should not be interpreted interchangeably.
+
+Analysis and validation
+Country-level summaries were produced for observation counts,
+period coverage, mean primary energy consumption, mean electricity
+demand and mean derived renewable share. A separate table records
+the latest available observation for each country. Selected energy
+indicators were reshaped into long format and merged with the
+codebook. The merge matched 4358 measurements and left
+0 measurements unmatched. Duplicate country-year
+pairs: 0. Missing country identifiers: 0;
+missing year identifiers: 0.
+
+Limitations and recommendations
+Data availability may differ across countries and years, so averages
+can be based on different numbers of observations. The ISO-code
+filter is a useful initial selection rule but does not by itself
+prove that every retained entity is a sovereign country. The derived
+renewable share excludes energy sources outside its stated
+denominator. Results should therefore be interpreted alongside
+the missingness report, indicator definitions and coverage dates.
+Before policy decisions, verify entity classifications, investigate
+unmatched codebook indicators and compare countries over consistent
+periods wherever possible.
